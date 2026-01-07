@@ -57,7 +57,7 @@ def main():
     )
 
     if PROXY_URL:
-        builder = builder.proxy(PROXY_URL)
+        builder = builder.proxy(PROXY_URL).get_updates_proxy(PROXY_URL)
 
     app = builder.build()
     app.add_handler(CommandHandler("iperf3", iperf3_handler))
