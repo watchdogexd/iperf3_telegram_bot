@@ -1,0 +1,23 @@
+"""
+BOT_TOKEN is required.
+create a bot and get BOT_TOKEN via Telegram @BotFather.
+for network restricted areas, proxy is needed to connect to Telegram API.
+run "pip install python-telegram-bot[socks]" for socks5 support.
+"""
+
+BOT_TOKEN = ""
+PROXY_URL = "socks5://127.0.0.1:1080"
+
+"""
+config.py allows overwriting default args.
+CHECK_PUBLIC_IP means only public ips are allowed for <server> arg.
+"""
+
+IPERF3_PATH = "iperf3"
+DEFAULT_PORT = 5201
+DEFAULT_DURATION = 10
+DEFAULT_THREAD = 1
+DEFAULT_REVERSE = True
+CHECK_PUBLIC_IP = True
+
+ALLOWED_USER_IDS = []
